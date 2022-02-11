@@ -88,6 +88,10 @@
 </div>
 
                         <?php } elseif ($_SESSION['status'] == 'MITRA') { ?>
+
+                            <!-- Content Row -->
+                    <div class="row">
+                        <h1>SELAMAT DATANG</h1>
                            
                             <div class="col-xl-12 col-md-12 mb-4">
 <div class="card border-second shadow py-2">
@@ -96,11 +100,17 @@
         </div>
     </div>
 </div>
+                    </div>
 
 
-                        <?php } elseif ($_SESSION['status'] == 'PESERTA') { ?>
+                        <?php } elseif ($_SESSION['status'] == 'PELAMAR') { ?>
 
-                            <div class="card border-second shadow py-2">
+      <!-- Content Row -->
+                    <div class="row">
+                        <h1>SELAMAT DATANG</h1>
+
+                        <div class="col-xl-12 col-md-12 mb-4">
+<div class="card border-second shadow py-2">
         <div class="card-body">
         <iframe src="../calendar-02/index.html" frameborder="0" width="100%" height="500px"></iframe>
         </div>

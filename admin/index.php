@@ -93,25 +93,15 @@
             <li class="nav-item <?php if($_GET['page'] == 'pinjam-buku-user') {echo "active";} ?>" >
                 <a class="nav-link" href="?page=pinjam-buku-user">
                     <i style="font-size: 17.5px;" class="fas fa-fw fa-arrow-alt-circle-right"></i>
-                    <span>Akun</span></a>
+                    <span>Data</span></a>
             </li>
             
             <?php  }elseif ($_SESSION['status'] == 'PELAMAR') { ?>
 
-            <li class="nav-item <?php if($_GET['page'] == 'data-buku') {echo "active";} ?>" >
-                <a class="nav-link" href="?page=data-buku">
-                    <i style="font-size: 17.5px;" class="fas fa-fw fa-book"></i>
-                    <span>Data Buku</span></a>
-            </li>
-            <li class="nav-item <?php if($_GET['page'] == 'pinjam-buku-user') {echo "active";} ?>" >
-                <a class="nav-link" href="?page=pinjam-buku-user">
-                    <i style="font-size: 17.5px;" class="fas fa-fw fa-arrow-alt-circle-right"></i>
-                    <span>Peminjaman</span></a>
-            </li>
-            <li class="nav-item <?php if($_GET['page'] == 'pengembalian-buku-user') {echo "active";} ?>" >
-                <a class="nav-link" href="?page=pengembalian-buku-user">
-                    <i style="font-size: 17.5px;" class="fas fa-fw fa-arrow-alt-circle-left"></i>
-                    <span>Pengembalian</span></a>
+            <li class="nav-item <?php if($_GET['page'] == 'home-pelamar') {echo "active";} ?>" >
+                <a class="nav-link" href="?page=home-pelamar">
+                    <i style="font-size: 17.5px;" class="fas fa-fw fa-user"></i>
+                    <span>Profil & Akun</span></a>
             </li>
             <?php } ?>
             <!-- Nav Item - Utilities Collapse Menu -->
@@ -186,8 +176,8 @@
                 include "data-pelamar.php";
               } elseif ($_GET['page'] == 'data-profil') {
                 include "data-profil.php";
-              } elseif ($_GET['page'] == 'pinjam-buku') {
-                include "pinjam-buku.php";
+              } elseif ($_GET['page'] == 'home-pelamar') {
+                include "home-pelamar.php";
               } elseif ($_GET['page'] == 'pinjam-buku-user') {
                 include "pinjam-buku-user.php";
               } elseif ($_GET['page'] == 'settings') {
