@@ -54,8 +54,6 @@
                               <td><?php echo $data['email_perusahaan']; ?></td>
                               <td>
                                 <ul class="list-inline m-0">
-                                  <?php if ($_SESSION['status'] == 'ADMIN') { ?>
-                                    <!-- action buttons -->
 
                                     <li class="list-inline-item edit-mitra" data-id="<?php echo $data['id'] ?>" data-nama="<?php echo $data['nama'] ?>" data-npwp="<?php echo $data['npwp'] ?>" data-jenis="<?php echo $data['jenis_perusahaan'] ?>" data-email="<?php echo $data['email_perusahaan'] ?>" data-username="<?php echo $data['username'] ?>" data-password="<?php echo $data['password'] ?>" data-filename="<?php echo $data['file_name'] ?>" data-status="<?php echo $data['status'] ?>">
                                       <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
@@ -66,10 +64,10 @@
                                     <li class="list-inline-item" data-toggle="modal" data-target="<?php echo "#kelolaakun" . $no ?>">
                                       <button class="confirmation btn btn-warning btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Kelola Akun"><i class="fa fa-user"></i></button>
                                     </li>
+                                    <li class="list-inline-item">
+                                      <a href="?page=kebutuhan&id=<?php echo $data['id']; ?>" class="btn btn-warning btn-sm rounded-0 mt-2" title="Data Kebutuhan"><i class="fa fa-list"></i></a>
+                                    </li>
 
-                                  <?php  } elseif ($_SESSION['status'] = 'USER') { ?>
-                                    -
-                                  <?php } ?>
                                 </ul>
                               </td>
                             </tr>

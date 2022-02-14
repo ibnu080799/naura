@@ -91,7 +91,6 @@
 
                             <!-- Content Row -->
                     <div class="row">
-                        <h1>SELAMAT DATANG</h1>
                            
                             <div class="col-xl-12 col-md-12 mb-4">
 <div class="card border-second shadow py-2">
@@ -107,7 +106,6 @@
 
       <!-- Content Row -->
                     <div class="row">
-                        <h1>SELAMAT DATANG</h1>
 
                         <div class="col-xl-12 col-md-12 mb-4">
 <div class="card border-second shadow py-2">

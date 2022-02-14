@@ -85,13 +85,13 @@
             <!-- Session User -->
             <?php  }elseif ($_SESSION['status'] == 'MITRA') { ?>
 
-            <li class="nav-item <?php if($_GET['page'] == 'profil') {echo "active";} ?>" >
-                <a class="nav-link" href="?page=data-buku">
+            <li class="nav-item <?php if($_GET['page'] == 'profil-mitra') {echo "active";} ?>" >
+                <a class="nav-link" href="?page=profil-mitra">
                     <i style="font-size: 17.5px;" class="fas fa-fw fa-book"></i>
                     <span>Profil</span></a>
             </li>
-            <li class="nav-item <?php if($_GET['page'] == 'pinjam-buku-user') {echo "active";} ?>" >
-                <a class="nav-link" href="?page=pinjam-buku-user">
+            <li class="nav-item <?php if($_GET['page'] == 'data-kebutuhan') {echo "active";} ?>" >
+                <a class="nav-link" href="?page=data-kebutuhan">
                     <i style="font-size: 17.5px;" class="fas fa-fw fa-arrow-alt-circle-right"></i>
                     <span>Data</span></a>
             </li>
@@ -198,6 +198,14 @@
                 include "penerbit.php";
               } elseif ($_GET['page'] == 'settings') {
                 include "settings.php";
+              } elseif ($_GET['page'] == 'profil-mitra') {
+                include "home-mitra.php";
+              } elseif ($_GET['page'] == 'data-kebutuhan') {
+                include "data-kebutuhan.php";
+              } elseif ($_GET['page'] == 'kebutuhan') {
+                include "kebutuhan.php";
+              } elseif ($_GET['page'] == 'detail-kebutuhan') {
+                include "detail-kebutuhan.php";
               } 
               ?>
             </div> <!-- /.container-fluid -->
